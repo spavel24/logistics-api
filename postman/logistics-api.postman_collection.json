@@ -1,0 +1,527 @@
+{
+	"info": {
+		"_postman_id": "bbc2516d-25ca-4a77-bf91-e72feb7f3d96",
+		"name": "begomx",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47402330",
+		"_collection_link": "https://checopav-5277219.postman.co/workspace/checopav's-Workspace~715e6989-1b61-4866-8b01-c70aba3eb66e/collection/47402330-bbc2516d-25ca-4a77-bf91-e72feb7f3d96?action=share&source=collection_link&creator=47402330"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "AGREGAR USUARIO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Pavel Mar\", // Nombre del Usuario\n  \"email\": \"sergio.pavel.mar@gmail.com\", // Email del usuario\n  \"password\": \"contraseña123\" // Contraseña del usuario\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VER USUARIOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VER USUARIO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/users/68940408d4ef5e4574c871a9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"users",
+								"68940408d4ef5e4574c871a9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ACTUALIZAR USUARIO",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Checo Mar\",\n  \"email\": \"checo_mar@example.com\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/api/users/689403add4ef5e4574c871a6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"users",
+								"689403add4ef5e4574c871a6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BORRAR USUARIO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/users/68940408d4ef5e4574c871a9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"users",
+								"68940408d4ef5e4574c871a9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trucks",
+			"item": [
+				{
+					"name": "AGREGAR TRANSPORTE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"plate\": \"098978\", // Placas\n  \"model\": \"Barco El Ferras\" // Modelo del transporte\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/api/trucks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"trucks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VER TRANSPORTES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/trucks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"trucks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VER TRANSPORTE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/trucks/68940f4e3e3ed314aee4851e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"trucks",
+								"68940f4e3e3ed314aee4851e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ACTUALIZAR TRANSPORTE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"plate\": \"020731\",\n  \"model\": \"FIAT Fiorino\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/api/trucks/68940f4e3e3ed314aee4851e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"trucks",
+								"68940f4e3e3ed314aee4851e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BORRAR TRANSPORTE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/trucks/68940ffc3e3ed314aee48524",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"trucks",
+								"68940ffc3e3ed314aee48524"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Locations",
+			"item": [
+				{
+					"name": "AGREGAR LOCALIZACION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Puerto de Acapulco\", // Nombre de la localización\n  \"address\": \"Guerrero, MX\" // Dirección de la localización\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/api/locations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VER LOCALIZACIONES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/locations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"locations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VER LOCALIZACION",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/locations/68941be0e4670dcbd5b20c42",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"locations",
+								"68941be0e4670dcbd5b20c42"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ACTUALIZAR LOCALIZACION",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"plate\": \"020731\",\n  \"model\": \"FIAT Fiorino\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/api/locations/68940f4e3e3ed314aee4851e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"locations",
+								"68940f4e3e3ed314aee4851e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BORRAR LOCALIZACION",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/locations/68941be0e4670dcbd5b20c42",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"locations",
+								"68941be0e4670dcbd5b20c42"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "AGREGAR ORDEN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"truck\": \"689423a14609fe2b0d94553f\", // ID de transporte\n  \"origin\": \"689422cb4609fe2b0d945536\", // ID Origen \n  \"destination\": \"689422e54609fe2b0d945539\", // ID Destino\n  \"status\": \"in_transit\" // Valores: 'pending', 'in_transit', 'delivered']\n}\n\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/api/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VER ORDENES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VER ORDEN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/orders/6894166660ca404458efb698",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"orders",
+								"6894166660ca404458efb698"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ACTUALIZAR ORDEN",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"plate\": \"020731\",\n  \"model\": \"FIAT Fiorino\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/api/orders/68940f4e3e3ed314aee4851e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"orders",
+								"68940f4e3e3ed314aee4851e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BORRAR ORDEN",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/api/orders/6894166660ca404458efb698",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"api",
+								"orders",
+								"6894166660ca404458efb698"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
