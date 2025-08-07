@@ -8,8 +8,6 @@ Node.js, TypeScript, MongoDB, JWT
 - JWT Authentication
 - Relaciones entre entidades
 
-## Cómo ejecutar:
-1. Clona el proyecto
-2. Crea un archivo `.env`
-3. Ejecuta `npm install`
-4. Corre el servidor con `npm run dev`
+## Descripción
+Código enfocado a APIs RESTful para gestionar usuarios, camiones, órdenes y ubicaciones en un sistema logístico, desarrollada con Node.js, Express, MongoDB y autenticación JWT.
+
