@@ -82,15 +82,12 @@
 				},
 				{
 					"name": "ACTUALIZAR USUARIO",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
-						"method": "GET",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"Checo Mar\",\n  \"email\": \"checo_mar@example.com\"\n}\n",
+							"raw": "{\n  \"name\": \"Checo Mar\", // Nombre del Usuario\n  \"email\": \"checo_mar@example.com\", // Email del usuario\n  \"password\": \"contraseña123\" // Contraseña del usuario\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -98,7 +95,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5001/api/users/689403add4ef5e4574c871a6",
+							"raw": "http://localhost:5001/api/users/68941b3349a17a300c90ba93",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -107,7 +104,7 @@
 							"path": [
 								"api",
 								"users",
-								"689403add4ef5e4574c871a6"
+								"68941b3349a17a300c90ba93"
 							]
 						}
 					},
@@ -211,11 +208,8 @@
 				},
 				{
 					"name": "ACTUALIZAR TRANSPORTE",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
-						"method": "GET",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -340,11 +334,8 @@
 				},
 				{
 					"name": "ACTUALIZAR LOCALIZACION",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
-						"method": "GET",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -469,15 +460,12 @@
 				},
 				{
 					"name": "ACTUALIZAR ORDEN",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
-						"method": "GET",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"plate\": \"020731\",\n  \"model\": \"FIAT Fiorino\"\n}\n",
+							"raw": "{\n  \"truck\": \"\",\n  \"origin\": \"\",\n  \"destination\": \"\",\n  \"status\": \"\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
