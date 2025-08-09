@@ -9,22 +9,11 @@ cd logistics-api
 # 2. Instalar dependencias (incluye TypeScript, ts-node, etc.)
 npm install
 
-# 3. Crear archivo .env en la raíz del proyecto con las variables necesarias:
-# Ejemplo de contenido del archivo .env:
-# MONGO_URI=mongodb://localhost:27017/logistics-api
-# JWT_SECRET=tu_clave_secreta
-# PORT=3000
+# 3. Asegurarse que MongoDB esté corriendo localmente o usar una URI válida
 
-# 4. Asegurarse que MongoDB esté corriendo localmente o usar una URI válida
-
-# 5. Ejecutar el proyecto en modo desarrollo (con ts-node para TypeScript)
+# 4. Ejecutar el proyecto en modo desarrollo (con ts-node para TypeScript)
 npm run dev
 
-# 6. (Opcional) Para compilar a JavaScript en la carpeta dist
-npx tsc
-
-# 7. (Opcional) Ejecutar la versión compilada
-node dist/index.js
 
 ## Tecnologías
 Node.js, TypeScript, MongoDB, JWT
